@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Say hello ^^</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="new_friend">New friend</string>
+    <string name="friend_name">Friend\'s name</string>
+    <string name="friend_days">Contact each X days</string>
+    <string name="add_friend">Add friend</string>
+    <string name="cancel">Cancel</string>
+</resources>

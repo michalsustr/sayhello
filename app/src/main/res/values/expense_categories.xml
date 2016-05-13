@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="expense_categories">
+        <item>Darčeky</item>
+        <item>Domácnosť</item>
+        <item>Doprava</item>
+        <item>Elektronika, počítač</item>
+        <item>Holka</item>
+        <item>Hygiena</item>
+        <item>Jedlo</item>
+        <item>Jedlo - drobnosti</item>
+        <item>Kaderníctvo</item>
+        <item>Lekárske ošetrenie</item>
+        <item>Podnikanie</item>
+        <item>Pokuta</item>
+        <item>Práčovňa / Čistiareň</item>
+        <item>Rôzne</item>
+        <item>Šaty, obuv</item>
+        <item>Škola</item>
+        <item>Šport</item>
+        <item>Telefón</item>
+        <item>Ubytovanie</item>
+        <item>Vzdelávanie</item>
+        <item>Zábava</item>
+        <item> Zdravie</item>
+    </string-array>
+</resources>
