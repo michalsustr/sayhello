@@ -116,8 +116,12 @@ public class FriendSqliteHelper extends SQLiteOpenHelper {
         return getFriends("SELECT * FROM friends WHERE lastContacted-"+MainActivity.getToday()+"+days <= 0");
     }
 
-    public List<Friend> getOtherFriends() {
-        return getFriends("SELECT * FROM friends WHERE lastContacted-"+MainActivity.getToday()+"+days > 0");
+    public List<Friend> getOtherFriends(String search) {
+        if(search == null || (search != null && search.trim().equals("")))
+            return getFriends("SELECT friends.*, lastContacted-"+MainActivity.getToday()+"+days as timeoffset FROM friends WHERE timeoffset > 0 ORDER BY timeoffset");
+        else
+            return getFriends("SELECT friends.*, lastContacted-"+MainActivity.getToday()+"+days as timeoffset FROM friends WHERE timeoffset > 0 AND name LIKE '%"+search.trim()+"%' ORDER BY timeoffset");
+
     }
 
     public int updateFriend(Friend friend) {
